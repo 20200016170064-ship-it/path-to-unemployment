@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <link href="contact.css" rel="stylesheet">
+
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, navy, darkblue, #1e3a8a);
+            min-height: 100vh;
+            color: white;
+        }
+
+        nav{
+            background: rgba(0,0,0,0.3);
+            padding: 20px;
+            text-align: center;
+            backdrop-filter: blur(5px);
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        nav a:hover{
+            color: lightblue;
+        }
+
+        .intro{
+            text-align: center;
+            width: 80%;
+            margin: 40px auto;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 50px;
+        }
+
+        .card{
+            width: 420px;
+            padding: 30px;
+            border-radius: 20px;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 20px rgba(0,0,0,0.4);
+            text-align: center;
+        }
+
+        .card h2{
+            margin-bottom: 20px;
+            font-size: 32px;
+            color: lightblue;
+        }
+
+        #contact input,
+        #contact textarea{
+            width: 90%;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+            font-size: 16px;
+        }
+
+        #contact textarea{
+            height: 120px;
+            resize: none;
+        }
+
+        #contact button{
+            margin-top: 10px;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 10px;
+            background: lightblue;
+            color: navy;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        #contact button:hover{
+            background: white;
+            transform: scale(1.05);
+        }
+
+        .box{
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(255,255,255,0.08);
+        }
+
+        .box p{
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About Us</a>
+        <a href="contacteme.html">Contact Us</a>
+        <a href="https://en.wikipedia.org/wiki/Unemployment">Explore More</a>
+        <a href="https://www.upwork.com/">Register</a>
+    </nav>
+
+    <div class="intro">
+        <p>
+            If you want more information about unemployment, or if you want to help people
+            who are struggling to find jobs, please contact us personally.
+            Together we can support unemployed people and create better opportunities.
+        </p>
+    </div>
+
+    <div class="container">
+
+        <section id="contact" class="card">
+
+            <h2>Contact Us</h2>
+
+            <input type="text" placeholder="Your Name">
+            <br><br>
+
+            <input type="email" placeholder="Your Email">
+            <br><br>
+
+            <textarea placeholder="Your Message"></textarea>
+            <br><br>
+
+            <button onclick="showMessage()">Send</button>
+
+            <div class="box">
+
+                <h2>Contacts</h2>
+
+                <p><strong>Email:</strong> 202.00016.17.0064@education.gov.bt</p>
+
+                <p><strong>Contact No:</strong> 17390605</p>
+
+                <p><strong>Address:</strong> Bhutan, Thimphu, Changbangdu, Twins Building</p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script>
+
+        function showMessage(){
+            alert("Message Sent Successfully!");
+        }
+
+    </script>
+
+</body>
+
+</html>
